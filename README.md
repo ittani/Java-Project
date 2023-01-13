@@ -1,4 +1,4 @@
-# Java-Project
+# Java Inheritance
 package Assessment;
 import java.util.*;
 public class ParentK {
@@ -105,4 +105,51 @@ public class Main1 {
 		+"\nStudent Fees R="+op.getFees()+"\nStudent is "+op.getAge()+" years old");
 	}
 
+}
+#Encapsulation
+
+public class encap {
+
+	private String name;
+	private double salary;
+	private int age;
+	//constructor
+	encap(String name, double salary, int age)
+	{
+this.age=age;
+this.name=name;
+this.salary=salary;
+	}
+	//default constructor
+	encap()
+	{}
+	
+	//get Methods
+	public String getName() {return name;}
+	public double getSalary() {return salary;}
+	public int getAge() {return age;}
+	
+	//set Methods
+	public void setName(String nam) {name=nam;}
+	public void setSalary(double sal) {salary=sal;}
+	public void setAge(int age1) {age=age1;}
+
+}
+public class Main {
+
+	public static void main(String[] args) {
+		// encapuslation part
+		encap val=new encap("Ittani",25000,25);
+      System.out.println("name is " + val.getName());
+      System.out.println("Salary is " + val.getSalary());
+      System.out.println("Age is " + val.getAge());
+      //encapuslation from default constructore
+    
+      val.setAge(23);
+		val.setName("Skepe");
+      val.setSalary(55000);
+      System.out.println("\nname is " + val.getName());
+      System.out.println("Salary is " + val.getSalary());
+      System.out.println("Age is " + val.getAge());
+  }
 }
