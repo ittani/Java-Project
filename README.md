@@ -106,7 +106,8 @@ public class Main1 {
 	}
 
 }
-#Encapsulation
+
+# Encapsulation
 
 public class encap {
 
