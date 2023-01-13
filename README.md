@@ -154,3 +154,35 @@ public class Main {
       System.out.println("Age is " + val.getAge());
   }
 }
+
+# BufferReader, FileReader and FileWriter
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+public class BufferReader {
+
+	public static void main(String[] args) {
+	
+		char[] arr= new char[5];
+		String data="Ittani is eating";
+	
+		try {
+			FileReader file= new FileReader("input.txt");
+			BufferedReader input= new BufferedReader(file);
+			FileWriter fil= new FileWriter("input.txt");
+			//Skips 5 characters
+			input.skip(5);
+			//Read in characters
+			input.read(arr);
+			//writing the string to the file
+			fil.write(data);
+			System.out.println("Data in the file");
+			System.out.println(arr);
+			//closing the reader
+			input.close();
+		}
+		catch(Exception e)
+		{
+			e.getStackTrace();
+		}
+		
