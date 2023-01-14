@@ -204,7 +204,7 @@ public class Box {
  
 double vol()
  {
-	 return len*wid*hei;
+	 return len * wid * hei;
  }
  	
 }
