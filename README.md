@@ -186,8 +186,8 @@ public class BufferReader {
 			e.getStackTrace();
 		}
 		
-		#Polymorphism
-		public class Box {
+# Polymorphism
+public class Box {
  double len, wid, hei;
  
  Box(double len, double wid, double hei)
