@@ -186,3 +186,37 @@ public class BufferReader {
 			e.getStackTrace();
 		}
 		
+		#Polymorphism
+		public class Box {
+ double len, wid, hei;
+ 
+ Box(double len, double wid, double hei)
+ {
+	 this.hei=hei;
+	 this.len=len;
+	 this.wid=wid;
+ }
+ Box()
+ {len=wid=hei=0.0;}
+ 
+ Box(double cy)
+ {hei=len=wid=cy;}
+ 
+double vol()
+ {
+	 return len*wid*hei;
+ }
+ 	
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+	Box mybox1= new Box(20.2,40.5,62.2);
+      Box mybox2= new Box();
+      Box circle= new Box(44.2);
+      
+     System.out.println("Box 1 volume="+mybox1.vol()+" mm^2");
+     System.out.println("Box 2 volume="+mybox2.vol()+" mm^2");
+     System.out.println("Box 3 Cycle volume="+circle.vol()+" mm^2");
+	}
